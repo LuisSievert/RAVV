@@ -1,0 +1,402 @@
+
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+// BG HOME
+
+.bg-home{
+    position: relative;
+    background-image: url("/assets/background3.webp");
+    width: 100%;
+    opacity: 0.95;
+}
+
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url("/assets/background4.png");
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+//-------------
+
+.hero{
+    max-width: 1040px;
+    color: $black-normal;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px;
+    text-align: center;
+    flex-direction: column;
+}
+    .hero h1 {
+        justify-content: space-around;
+        color: $primary-dark;
+        text-align: center;
+        line-height: 100%;
+        max-width: 600px;
+        font-size: 32px;
+      }
+      .hero h2 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 26px;
+        max-width: 600px;
+      }
+      .hero p {
+        font-size: 19px;
+        color: black;
+        font-style: oblique;
+        text-align: center;
+        margin: 15px 0;
+        line-height: 100%;
+        max-width: 600px;
+
+      }
+
+      
+      .button-contact {
+        padding: 14px 22px;
+        color: #fff;
+        background-color: #d94140;
+        border: 1px solid;
+        border-radius: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 14px 0;
+      }
+
+.button-contact{
+    border: 1px solid #fff;
+    padding: 8px 24px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.8s;
+    max-width: 600px;
+}
+
+.button-contact:hover{
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+      min-height: 60vh;
+    }
+    .hero h1 {
+      font-size: 24px;
+      padding: 0 12px;
+      width: 100%;
+      gap: 14px;
+      max-width: 600px;
+    }
+    .hero h2 {
+      font-size: 16px;
+      padding: 0 12px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .hero p {
+      width: 100%;
+      font-size: 12px;
+      max-width: 600px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .hero h1 {
+      font-size: 14px;
+    }
+} 
+//-------------------------
+
+//About ---------------------
+
+.about{
+    background-color: #ffffff;
+    overflow: hidden;
+    color: $primary-light;
+
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+    margin-bottom: 32px;
+
+    img{
+      width: 400px;
+    }
+
+    .about-content div{
+        flex:1;
+    }
+
+    .about-description{
+        h2{
+          font-size: 38px;  
+          margin-bottom: 24px;
+        }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+     }
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .about-content{
+        flex-direction: column;
+    }
+    
+}
+
+// -----------------------------
+
+// SERVICES----------------------
+
+.services{
+    background-color: $white-normal;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px  14px;
+}
+
+.services-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.services-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.service-icons{
+    display:column;
+    justify-content: left;
+    align-items: center;
+    gap: 34px;
+    padding: 0 44px 34px 44px ;
+}
+
+.contract{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    
+   
+
+    overflow: hidden;
+
+    img{
+        width: 100px;
+        box-shadow: 0px -1px 17px -4px rgba($color: #706e6e, $alpha: 0.90);
+        border-radius: 23px;
+        transition: transform 0.25ms;
+    }
+   
+}
+
+.contract img :hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.contract-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+    cursor: default;
+}
+    
+@media screen and (max-width: 600px) {
+    .contract{
+        flex-direction: column;
+    }
+ 
+    .haircuts img{
+        max-width: 740px;
+    }
+}
+ //------------------------------
+
+
+//FOOTER
+
+.contact{
+    display: flex;
+    background-color: $black-light;
+    color: $white-normal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px  14px;
+    text-align: left;
+
+    h2{
+        font-size: 20px ;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px;
+    gap: 24px;
+    color: $white-normal;
+    background-color: $black-dark;
+
+    p{
+        font-size: 12px;
+    }
+
+    img{
+        max-width: 200px;
+    }
+
+    a{
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+//------------------------------
+
+// BOTAO WHATSAPP
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 24px;
+    right: 14px;
+    z-index: 99;
+
+    img{
+        max-width: 54px;
+        transform:  transform 0.4s ;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatsapp .tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $gray-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px){
+    .btn-whatsapp{
+        img{
+            max-width: 44px;
+        }
+    }
+}
+
+//--------------------------------
+
+//SERVICE2------------------------
+
+.container2{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    display:column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 34px;
+    padding: 0 44px 34px 44px ;
+    background-color: $white-normal;
+}
+
+@media screen and (max-width: 600px) {
+    .container2{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+
+.service2{
+    img{ 
+        display: flex;
+        width: 100px;
+    }
+}
+
+.button2{
+  border: 1px solid $white-normal;
+  padding: 8px 24px;
+  border-radius: 7px;
+  color: $white-dark;
+  background-color: green;
+  transition: background-color 0.8s;
+  align-items: center;
+  text-align: center;
+  animation: translateY 0.9s infinite alternate;
+}
+
+.button2:hover{
+    border: 1px solid $blue-light;
+    background-color: $blue-light;
+}
+
+
