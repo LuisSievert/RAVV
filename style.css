@@ -106,7 +106,7 @@ header {
 
 .bg-home {
   position: relative;
-  background-image: url("/assets/background3.webp");
+  background-image: url("../assets/background3.webp");
   width: 100%;
   opacity: 0.95;
 }
@@ -115,7 +115,6 @@ header {
   content: "";
   display: block;
   position: absolute;
-  background-image: url("/assets/background4.png");
   left: 0;
   top: 0;
   width: 100%;
