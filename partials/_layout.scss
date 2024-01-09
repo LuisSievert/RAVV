@@ -9,25 +9,13 @@
 
 .bg-home{
     position: relative;
+    background-color: #030349;
     width: 100%;
-    background-image: url("backgroundravv4.png");
     background-size: cover;
     background-repeat: no repeat;
     opacity: 0.9;
 }
 
-.bg-home:before{
-    content: '';
-    display: block;
-    position: absolute;
-    background-image: url("backgroundravv4.png");
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no repeat;
-}
 
 //-------------
 
@@ -45,14 +33,14 @@
 }
     .hero h1 {
         justify-content: space-around;
-        color: $gray-dark;
+        color: $white-normal;
         text-align: center;
         line-height: 100%;
         max-width: 580px;
         font-size: 36px;
       }
       .hero h2 {
-       color: $black-light;
+       color: $white-normal;
         text-align: center;
         line-height: 150%;
         max-width: 580px;
@@ -62,7 +50,7 @@
       }
       .hero p {
         font-size: 22px;
-        color: $black-dark;
+        color: $white-normal;
         font-style: oblique;
         text-align: center;
         margin: 15px 0;
@@ -111,7 +99,7 @@ transform: scale(1.07);
       min-height: 60vh;
     }
     .hero h1 {
-      color: $black-dark;
+      color: $white-normal;
       font-size: 24px;
       padding: 0 12px;
       width: 100%;
@@ -119,14 +107,14 @@ transform: scale(1.07);
       max-width: 580px;
     }
     .hero h2 {
-      color: $black-dark;
+      color: $white-normal;
       font-size: 16px;
       padding: 0 12px;
       width: 100%;
       max-width: 580px;
     }
     .hero p {
-      color: $black-dark;
+      color: $white-normal;
       width: 100%;
       font-size: 12px;
       max-width: 580px;
@@ -142,7 +130,7 @@ transform: scale(1.07);
 //About ---------------------
 
 .about{
-    background-color: #ffffff;
+    background-color: #FFF8DC;
     overflow: hidden;
     color: $primary-light;
 
@@ -189,7 +177,7 @@ transform: scale(1.07);
 // SERVICES----------------------
 
 .services{
-    background-color: $white-normal;
+    background-color: #FFF8DC;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -203,6 +191,7 @@ transform: scale(1.07);
     text-align: center;
     font-size: 38px;
     margin-bottom: 32px;
+    background-color: #FFF8DC;
 }
 
 .services-content p{
@@ -210,6 +199,7 @@ transform: scale(1.07);
     margin-bottom: 14px;
     text-align: center;
     max-width: 580px;
+    background-color: #FFF8DC;
 }
 
 .service-icons{
@@ -218,19 +208,21 @@ transform: scale(1.07);
     align-items: center;
     gap: 34px;
     padding: 0 44px 34px 44px ;
+    background-color: #FFF8DC;
 }
 
 .contract{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: $white-normal;
+    background-color: #FFF8DC;
     
    
 
     overflow: hidden;
 
     img{
+        background-color: #FFF8DC;
         width: 100px;
         box-shadow: 0px -1px 17px -4px rgba($color: #706e6e, $alpha: 0.90);
         border-radius: 23px;
@@ -249,7 +241,7 @@ transform: scale(1.07);
     display: flex;
     justify-content: space-between;
     padding: 14px;
-    background-color: $white-normal;
+    background-color: #FFF8DC;
     z-index: 99;
     cursor: default;
 }
@@ -265,51 +257,134 @@ transform: scale(1.07);
 }
  //------------------------------
 
+//SERVICE2------------------------
+
+.container2{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    display:column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 34px;
+    padding: 0 44px 34px 44px ;
+    background-color: #FFF8DC;
+}
+
+@media screen and (max-width: 580px) {
+    .container2{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+
+.service2{
+    img{ 
+        display: flex;
+        width: 100px;
+    }
+}
+
+.button2{
+  border: 1px solid $white-normal;
+  padding: 8px 24px;
+  border-radius: 7px;
+  color: $white-dark;
+  background-color: green;
+  transition: background-color 0.8s;
+  align-items: center;
+  text-align: center;
+  animation: translateY 0.9s infinite alternate;
+}
+
+.button2:hover{
+    border: 1px solid $blue-light;
+    background-color: $blue-light;
+}
+
+//SERVICE3------------------------
+
+.container3{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    display:column;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 18px;
+    padding: 0 14px 24px 4px ;
+    background-color: #FFF8DC;
+}
+
+
+
+@media screen and (max-width: 580px) {
+    .container3{
+        width: 100%;
+        flex-direction: column;
+        display:column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+.service3{
+    img{ 
+        display: flex;
+        width: 100px;
+    }
+}
+
+//------------------------------
+
 
 //FOOTER
 
 .contact{
+    background-image: url(../Assets/backgroundravv2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     display: flex;
-    background-color: $black-light;
-    color: $white-normal;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 54px  14px;
+    padding:  0 14px 24px 4px;
     text-align: left;
+    gap: 4px;
+    opacity: 0.9;
 
     h2{
-        font-size: 20px ;
-    }
-
-    p{
-        font-size: 12px;
-    }
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 54px;
-    gap: 24px;
-    color: $white-normal;
-    background-color: $black-dark;
-
-    p{
-        font-size: 12px;
-    }
-
-    img{
-        max-width: 200px;
-    }
-
-    a{
-        color: #fff;
+        color: $gray-normal;
+        font-size: 25px ;
         font-weight: bold;
     }
+
+    p{
+        font-size: 15px;
+        color: $gray-normal;
+        font-weight: bold;
+    }
+
+    .Footer-text{
+        color: #d94140;
+        font-size: 12px;
+    }
+
 }
+
+@media  screen and (max-width: 580px) {
+    .contact{
+        flex-direction: column;
+        background-size: 100%;
+    }
+}
+
 
 //------------------------------
 
@@ -360,87 +435,3 @@ transform: scale(1.07);
 }
 
 //--------------------------------
-
-//SERVICE2------------------------
-
-.container2{
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 8px;
-    display: flex;
-    display:column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 34px;
-    padding: 0 44px 34px 44px ;
-    background-color: $white-normal;
-}
-
-@media screen and (max-width: 580px) {
-    .container2{
-        width: 100%;
-        flex-direction: column;
-    }
-    
-}
-
-.service2{
-    img{ 
-        display: flex;
-        width: 100px;
-    }
-}
-
-.button2{
-  border: 1px solid $white-normal;
-  padding: 8px 24px;
-  border-radius: 7px;
-  color: $white-dark;
-  background-color: green;
-  transition: background-color 0.8s;
-  align-items: center;
-  text-align: center;
-  animation: translateY 0.9s infinite alternate;
-}
-
-.button2:hover{
-    border: 1px solid $blue-light;
-    background-color: $blue-light;
-}
-
-//SERVICE3------------------------
-
-.container3{
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 0 8px;
-    display: flex;
-    display:column;
-    text-align: left;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 18px;
-    padding: 0 14px 24px 4px ;
-    background-color: $white-normal;
-}
-
-
-
-@media screen and (max-width: 580px) {
-    .container3{
-        width: 100%;
-        flex-direction: column;
-        display:column;
-        justify-content:center;
-        align-items: center;
-        text-align: center;
-    }
-    
-}
-
-.service3{
-    img{ 
-        display: flex;
-        width: 100px;
-    }
-}
