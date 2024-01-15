@@ -2,10 +2,10 @@
 .container{
     max-width: 1250px;
     margin:  auto;
-    padding: 0 8px;
+    padding: 2px;
 }
 
-// BG HOME
+//BGHOME------------------------------------------------------------------------------------------------------------------------------------
 
 .bg-home{
     position: relative;
@@ -17,7 +17,7 @@
 }
 
 
-//-------------
+    //HERO---------------------------------------------------------------------------------------------------------
 
 .hero{
     position: relative;
@@ -38,16 +38,20 @@
         line-height: 100%;
         max-width: 580px;
         font-size: 36px;
+        margin: 100px;
+    
       }
       .hero h2 {
        color: $white-normal;
         text-align: center;
-        line-height: 150%;
+        line-height: 100%;
         max-width: 580px;
         font-size: 22px;
         max-width: 600px;
         font-style: oblique;
+        margin: 100px;
       }
+
       .hero p {
         font-size: 22px;
         color: $white-normal;
@@ -56,7 +60,7 @@
         margin: 15px 0;
         line-height: 100%;
         max-width: 580px;
-
+        margin: 100px;
       }
 
       
@@ -70,6 +74,67 @@
         font-weight: 600;
         margin: 14px 0;
       }
+
+    //---------------------------------------------------------------------------------------------------------
+
+    //HERO2-------------------------------------------------------------------------------------------
+
+
+      .hero2{
+        position: relative;
+        max-width: 1250px;
+        color: $black-normal;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 14px;
+        text-align: center;
+        flex-direction: column;
+    }
+        .hero2 h1 {
+            justify-content: space-around;
+            color: $black-normal;
+            text-align: center;
+            line-height: 100%;
+            max-width: 580px;
+            font-size: 36px;
+            margin: 100px;
+        
+          }
+          .hero2 h2 {
+            color: $black-normal;
+            text-align: center;
+            line-height: 100%;
+            max-width: 580px;
+            font-size: 22px;
+            max-width: 600px;
+            margin: 100px;
+          }
+    
+          .hero2 p {
+            font-size: 22px;
+            color: $black-normal;
+            text-align: center;
+            margin: 15px 0;
+            line-height: 100%;
+            max-width: 580px;
+            margin: 100px;
+          }
+    
+          
+          .button-contact {
+            padding: 14px 22px;
+            color: #ffffff;
+            background-color: #d94140;
+            border: 1px solid;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 14px 0;
+          }
+
+    //---------------------------------------------------------------------------------------------------------
 
 .button-contact{
     border: 1px solid #fff;
@@ -137,12 +202,12 @@ transform: scale(1.07);
 }
 
 .about-content{
+    max-width: 1250px;
+    margin:  auto;
+    padding: 2px;
     display: flex;
     align-items: center;
     justify-content:center;
-    gap: 14px;
-    padding: 34px 14px 64px 14px;
-    margin-bottom: 32px;
 
     img{
       width: 400px;
@@ -257,20 +322,43 @@ transform: scale(1.07);
 }
  //------------------------------
 
-//SERVICE2------------------------
+//CONTEINER2------------------------
 
 .container2{
     max-width: 1250px;
     margin: 0 auto;
-    padding: 0 8px;
+    padding: 2px;
     display: flex;
-    display:column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 34px;
-    padding: 0 44px 34px 44px ;
+    gap: 120px;
+    background-color: #FFF8DC;
+    text-align:left;
+}
+
+.container2 h2{
+    line-height: 100%;
+    margin-bottom: 55px;
+    text-align: center;
+    max-width: 680px;
     background-color: #FFF8DC;
 }
+
+.container2 p{
+    line-height: 100%;
+    margin-bottom: 55px;
+    text-align: center;
+    max-width: 680px;
+    background-color: #FFF8DC;
+}
+
+.container img{
+    line-height: 100%;
+    margin-bottom: 55px;
+    text-align: center;
+    max-width: 680px;
+}
+
 
 @media screen and (max-width: 580px) {
     .container2{
@@ -279,6 +367,13 @@ transform: scale(1.07);
     }
     
 }
+
+ //------------------------------
+
+
+
+
+//SERVICE2------------------------
 
 .service2{
     img{ 
@@ -347,32 +442,27 @@ transform: scale(1.07);
 //FOOTER
 
 .contact{
-    background-image: url(../Assets/backgroundravv2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding:  0 14px 24px 4px;
-    text-align: left;
-    gap: 4px;
-    opacity: 0.9;
+    margin:  auto;
+    padding: 2px;
+    background-color:#02021d;
+    text-align: center;
+
+
 
     h2{
-        color: $gray-normal;
+        color: $white-normal;
         font-size: 25px ;
         font-weight: bold;
     }
 
     p{
         font-size: 15px;
-        color: $gray-normal;
+        color: $white-normal;
         font-weight: bold;
     }
 
     .Footer-text{
-        color: #d94140;
+        color: $white-normal;
         font-size: 12px;
     }
 
@@ -509,3 +599,6 @@ transform: scale(1.07);
         background-size: 100%;
     }
 }
+
+//headers--------------------------------------------------
+

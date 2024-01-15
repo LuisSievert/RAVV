@@ -1,21 +1,28 @@
 header{
     width: 100%;
     text-align: center;
+    justify-content:center;
 }
 
 .header-content{
     display: flex;
     align-items: center;
     justify-content:center;
+    padding: 14px;
+    margin: 100px;
     
 }
 
     
 
 .header-button{
-    display:contents;
-    gap: 20px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
     font-size: 18px;
+    padding: 14px;
+    margin: 2px;
 }
 
 .header-button a:hover{
@@ -40,14 +47,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     border-radius: 7px;
-    padding: 2px 2px ;
+    padding: 2px;
+    margin: 2px;
     border: 1px solid $black-dark ;
     color: $black-dark;
-    margin: 1px;
-    padding: 1px;
     background-color: rgb(218, 215, 212);
-    justify-content:flex-end;
-    
+    align-items: center;
+    justify-content:center;
 }
 
 
@@ -55,6 +61,8 @@ header{
 @media screen and (max-width: 580px){
     .header-button{
        font-size: 9px;
+       padding: 14px;
+       margin: 2px;
     }
 
     .header-logo{
@@ -71,24 +79,27 @@ header{
 
 .header-logo{
     display: flex;
-    margin-top: 50px;
-    width: 50%;
-    justify-content: space-between;
-    align-items:baseline;
+    padding: 14px;
+    margin: 2px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
 a{
+    padding: 14px;
+    margin: 2px;
     display: flex;
     flex-direction:column;
     align-items:normal;
     justify-content: space-between;
-    padding: 6px;
+    padding: 2px;
     }
 }
 
 @media screen and (max-width: 580px) {
     .header-content{
-        max-width: 580px;
-        width: 100% ;
+        padding: 14px;
+        margin: 2px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -97,7 +108,7 @@ a{
 
     i{
         max-width: 580px;
-        margin-top: 16px;
+        margin-top: 14px;
         font-size: 34px;
     }
 
@@ -106,6 +117,8 @@ a{
         margin-top: 30px;
     }
     .header-button{
-        display:grid;
+        display:inline;
+        align-items: center;
+        justify-content:center;
     }
 }
